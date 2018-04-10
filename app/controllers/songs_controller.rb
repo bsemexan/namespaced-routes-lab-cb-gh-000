@@ -29,7 +29,7 @@ class SongsController < ApplicationController
     if preference.allow_create_songs == true
       @song = Song.new
     else
-      redirect_to songs_path, alret: "You cannot create a song."
+      redirect_to songs_path
     end
   end
 
