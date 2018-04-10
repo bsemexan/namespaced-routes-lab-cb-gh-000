@@ -27,7 +27,9 @@ class SongsController < ApplicationController
   def new
     preference = Preference.all
     if preference.allow_create_songs == true
-    @song = Song.new
+      @song = Song.new
+    else
+      redirect_to songs_path, alret: "You cannot create a song."
   end
 
   def create
