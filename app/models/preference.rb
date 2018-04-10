@@ -4,7 +4,7 @@ class Preference < ActiveRecord::Base
   end
 
   def self.allow_create_artists
-    Preference.all.allow_create_artists
+    Preference.last.allow_create_artists
   end
 
 end
