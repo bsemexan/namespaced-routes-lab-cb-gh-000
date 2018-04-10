@@ -4,7 +4,7 @@ class Admin::PreferencesController < ApplicationController
   # GET /preferences
   # GET /preferences.json
   def index
-    @preferences = Preference.find_or_create(:preference)
+    @preferences = Preference.all
   end
 
   # GET /preferences/1
