@@ -3,4 +3,8 @@ class Preference < ActiveRecord::Base
     Preference.last.allow_create_songs
   end
 
+  def self.allow_create_artists
+    Preference.all.allow_create_artists
+  end
+
 end
