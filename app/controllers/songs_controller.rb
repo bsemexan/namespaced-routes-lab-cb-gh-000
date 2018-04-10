@@ -30,6 +30,7 @@ class SongsController < ApplicationController
       @song = Song.new
     else
       redirect_to songs_path, alret: "You cannot create a song."
+    end
   end
 
   def create
