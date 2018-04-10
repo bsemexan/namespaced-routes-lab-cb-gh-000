@@ -69,6 +69,6 @@ class Admin::PreferencesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def preference_params
-      params[:preference]
+      params():preference).permit(:song_sort_order, :artist_sort_order, :allow_create_artists, :allow_create_songs)
     end
 end
