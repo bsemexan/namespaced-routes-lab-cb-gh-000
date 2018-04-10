@@ -13,6 +13,7 @@ class ArtistsController < ApplicationController
       @artist = Artist.new
     else
       redirect_to artists_path, alert: "You cannot create an artist."
+    end
   end
 
   def create
